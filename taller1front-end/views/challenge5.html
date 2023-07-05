@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesC2.css">
+    <link rel="stylesheet" href="../css/cards.css">
+    <title>Reto 5</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Reto 5</h1>
+    </div>
+    <a href="../index.html"><input type="submit" class="volver" value="Volver"></a>
+    <div class="caja1">
+        <div class="card">
+            <h3>Cuadrado</h3>
+            <img src="../img/cuadrado.png" width="200px" height="200px">
+            <input type="submit" value="Calcular Área" class="input" id="abrirModalCa">
+            <input type="submit" value="Calcular Perímetro" class="input" id="abrirModalCp">
+        </div>
+        <div id="ventanaModalCa" class="modalCa">
+            <div class="contenidoModalCa">
+                <input type="submit" class="XCa" value="X">
+                <center><img src="../img/cuadrado.png" width="200px" height="200px"></center>
+                <center><h3>Calcular Área</h3></center>
+                <form onsubmit="calculateAreaC(); return false;">
+                    <input type="number" class="input" id="area" placeholder="Lado del cuadrado">
+                    <input type="submit" class="input" value="Calcular Área">
+                </form>
+            </div>
+        </div>
+        <div id="ventanaModalCp" class="modalCp">
+            <div class="contenidoModalCp">
+                <input type="submit" class="XCp" value="X">
+                <center><img src="../img/cuadrado.png" width="200px" height="200px"></center>
+                <center><h3>Calcular Perímetro</h3></center>
+                <form onsubmit="calculatePerimetroC(); return false;">
+                    <input type="number" class="input" id="lado" placeholder="Lado del cuadrado">
+                    <input type="submit" class="input" value="Calcular Área">
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Triángulo</h3>
+            <img src="../img/triangulo.png" width="200px" height="200px">
+            <input type="submit" value="Calcular Área" class="input" id="abrirModalTa">
+            <input type="submit" value="Calcular Perímetro" class="input" id="abrirModalTp">
+        </div>
+        <div id="ventanaModalTa" class="modalTa">
+            <div class="contenidoModalTa">
+                <input type="submit" class="XTa" value="X">
+                <center><img src="../img/triangulo.png" width="200px" height="200px"></center>
+                <center><h3>Calcular Área</h3></center>
+                <form onsubmit="calculateAreaT(); return false;">
+                    <input type="number" class="input" id="base" placeholder="Base">
+                    <input type="number" class="input" id="altura" placeholder="Altura">
+                    <input type="submit" class="input" value="Calcular Área">
+                </form>
+            </div>
+        </div>
+        <div id="ventanaModalTp" class="modalTp">
+            <div class="contenidoModalTp">
+                <input type="submit" class="XTp" value="X">
+                <center><img src="../img/triangulo.png" width="200px" height="200px"></center>
+                <center><h3>Calcular Perímetro</h3></center>
+                <form onsubmit="calculatePerimetroT(); return false;">
+                    <input type="number" class="input" id="lado1" placeholder="Lado 1">
+                    <input type="number" class="input" id="lado2" placeholder="Lado 2">
+                    <input type="number" class="input" id="lado3" placeholder="Lado 3">
+                    <input type="submit" class="input" value="Calcular Perímetro">
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Rectángulo</h3>
+            <img src="../img/rectangulo.png">
+            <input type="submit" value="Calcular Área" class="input" id="abrirModalRa">
+            <input type="submit" value="Calcular Perímetro" class="input" id="abrirModalRp">
+        </div>
+        <div id="ventanaModalRa" class="modalRa">
+            <div class="contenidoModalRa">
+                <input type="submit" class="XRa" value="X">
+                <center><img src="../img/rectangulo.png"></center>
+                <center><h3>Calcular Área</h3></center>
+                <form onsubmit="calculateAreaR(); return false;">
+                    <input type="number" class="input" id="baseR" placeholder="Base">
+                    <input type="number" class="input" id="alturaR" placeholder="Altura">
+                    <input type="submit" class="input" value="Calcular Área">
+                </form>
+            </div>
+        </div>
+        <div id="ventanaModalRp" class="modalRp">
+            <div class="contenidoModalRp">
+                <input type="submit" class="XRp" value="X">
+                <center><img src="../img/rectangulo.png"></center>
+                <center><h3>Calcular Perímetro</h3></center>
+                <form onsubmit="calculatePerimetroR(); return false;">
+                    <input type="number" class="input" id="baseRp" placeholder="Base">
+                    <input type="number" class="input" id="alturaRp" placeholder="Altura">
+                    <input type="submit" class="input" value="Calcular Área">
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Circulo</h3>
+            <img src="../img/circulo.png" width="200px" height="200px">
+            <input type="submit" value="Calcular Área" class="input" id="abrirModalCia">
+            <input type="submit" value="Calcular Perímetro" class="input" id="abrirModalCip">
+        </div>
+        <div id="ventanaModalCia" class="modalCia">
+            <div class="contenidoModalCia">
+                <input type="submit" class="XCia" value="X">
+                <center><img src="../img/circulo.png" width="200px" height="200px"></center>
+                <center><h3>Calcular Área</h3></center>
+                <form onsubmit="calculateAreaCi(); return false;">
+                    <input type="number" class="input" id="radio" placeholder="Radio del circulo">
+                    <input type="submit" class="input" value="Calcular Área">
+                </form>
+            </div>
+        </div>
+        <div id="ventanaModalCip" class="modalCip">
+            <div class="contenidoModalCip">
+                <input type="submit" class="XCip" value="X">
+                <center><img src="../img/circulo.png" width="200px" height="200px"></center>
+                <center><h3>Calcular Perímetro</h3></center>
+                <form onsubmit="calculatePerimetroCi(); return false;">
+                    <input type="number" class="input" id="radioC" placeholder="Radio del circulo">
+                    <input type="submit" class="input" value="Calcular Área">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/challenge5.js"></script>
+</body>
+</html>

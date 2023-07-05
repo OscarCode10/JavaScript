@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Reto 6</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Reto 5</h1>
+    </div>
+    <a href="../index.html"><input type="submit" class="volver" value="Volver"></a>
+    <main>
+        <div class="caja">
+            <form class="formu" id="frmvalidacion" novalidate>
+                <h1>Formulario de Registro</h1>
+
+                <label>Tipo Documento</label>
+                <select id="tipoDoc">
+                    <option value="0">Selecciona un Tipo de Documento</option>
+                    <option value="1">Cédula de Ciudadanía</option>
+                    <option value="2">Tarjeta de IdentidadZ</option>
+                    <option value="3">Pasaporte</option>
+                </select>
+                <div id="campoNoDoc">
+                    <label>No Documento</label>
+                    <input type="number" name="noDoc" class="input">
+                    <div class="feedback"></div>
+                </div>
+                
+                <div id="campoNombre">
+                    <label>Nombre</label>
+                    <input type="text" name="name" class="input">
+                    <div class="feedback"></div>
+                </div>
+                
+                <div id="campoApellido">
+                    <label>Apellido</label>
+                    <input type="text" name="lastName" class="input">
+                    <div class="feedback"></div>
+                </div>
+
+                <div id="campoFechaNacimiento">
+                    <label>Fecha de Nacimiento</label>
+                    <input type="date" name="fechaNacimiento" class="input">
+                    <div class="feedback"></div>
+                </div>
+
+                <div id="campoCorreo">
+                   <label>Correo</label>
+                   <input type="email" name="email" class="input">
+                    <div class="feedback"></div>
+                </div>
+
+                <div id="campoPswd">
+                    <label>Contraseña</label>
+                    <input type="text" name="pswd" class="input">
+                    <div class="feedback"></div>
+                </div>
+
+                <div id="campoPswdC">
+                    <label>Confirmar contraseña</label>
+                    <input type="text" name="pswdC" class="input">
+                    <div class="feedback"></div>
+                </div>
+
+                <div id="campoTp">
+                    <label>Términos y Condiciones</label>
+                    <input type="button" class="input" id="abrirModalTC" value="Términos y Condiciones">
+                    <input type="checkbox" name="terminosCondiciones" class="input">
+                    <div class="feedback"></div>
+                </div>
+            <input type="submit" value="Registrar">
+            </form>
+        </div>
+    </main>
+    <script src="../js/challenge6.js"></script>
+</body>
+</html>

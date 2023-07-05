@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesC2.css">
+    <title>Reto 2</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Reto 2</h1>
+    </div>
+    <a href="../index.html"><input type="submit" class="volver" value="Volver"></a>
+    <div class="caja">
+        <div class="formu">
+            <form onsubmit="calulateTemp(); return false;">
+              <div class="fila">
+                <label class="vas">Vas a convertir de</label>
+                <select id="decision1">
+                    <option value="1">Fahrenheit</option>
+                    <option value="2">Celsius </option>
+                    <option value="3">Kelvin</option>
+                </select>
+                <input type="number" placeholder="Ingrese la temperatura" id="temp">
+              </div>
+              <div class="fila">
+                <label class="vas">Deseas convertir a</label>
+                <select id="decision2">
+                    <option value="1">Fahrenheit</option>
+                    <option value="2">Celsius </option>
+                    <option value="3">Kelvin</option>
+                </select>
+              </div>
+              <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/challenge2.js"></script>
+</body>
+</html>

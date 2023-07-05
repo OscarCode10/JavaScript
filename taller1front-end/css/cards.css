@@ -1,0 +1,316 @@
+.card {
+  display:inline;
+  justify-content: center;
+  align-items: center;
+  background-color:#87c6ab;
+  margin-right: 10px;
+  border-radius: 20px;
+  padding: 40px;
+}
+.card h3 {
+  font-family: Helvetica;
+  font-size: 20px;
+  margin-bottom: 5px;
+  position: relative;
+  bottom: 20px;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+.input{
+  position: relative;
+  right: 20px;
+  cursor: pointer;
+  padding: 5px;
+  display: block;
+  align-items: center;
+  width: 100%;
+  border-radius: 15px;
+  font-size: x-large;
+  background-color: #ffffff;
+  color:black;
+}
+.input:hover{
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: x-large;
+  background-color: #bafbdf;
+}
+.caja1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #01b377;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+@keyframes animarmodal {
+  from{top: -300px; opacity: 0;}
+
+  to{top: 0; opacity: 1;}
+}
+/*Cuadrado*/
+/*Área*/
+.modalCa{
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: auto;
+  padding-top: 0px;
+  display: none;
+}
+.contenidoModalCa{
+  width: 30%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  animation-name: animarmodal;
+  animation-duration: .7s;
+  background-color: #87c6ab;
+  padding:30px;
+  border-radius: 20px;
+}
+.XCa{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  position: relative;
+  left: 540px;
+  border-radius: 5px;
+} 
+/*Perímetro*/
+.modalCp{
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: auto;
+  padding-top: 0px;
+  display: none;
+}
+.contenidoModalCp{
+  width: 30%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  animation-name: animarmodal;
+  animation-duration: .7s;
+  background-color: #87c6ab;
+  padding:30px;
+  border-radius: 20px;
+}
+.XCp{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  position: relative;
+  left: 540px;
+  border-radius: 5px;
+} 
+/*Triángulo*/
+/*Área*/
+.modalTa{
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: auto;
+  padding-top: 0px;
+  display: none;
+}
+.contenidoModalTa{
+  width: 30%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  animation-name: animarmodal;
+  animation-duration: .7s;
+  background-color: #87c6ab;
+  padding:30px;
+  border-radius: 20px;
+}
+.XTa{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  position: relative;
+  left: 540px;
+  border-radius: 5px;
+} 
+/*Perímetro*/
+.modalTp{
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: auto;
+  padding-top: 0px;
+  display: none;
+}
+.contenidoModalTp{
+  width: 30%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  animation-name: animarmodal;
+  animation-duration: .7s;
+  background-color: #87c6ab;
+  padding:30px;
+  border-radius: 20px;
+}
+.XTp{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  position: relative;
+  left: 540px;
+  border-radius: 5px;
+} 
+/*Rectángulo*/
+/*Área*/
+.modalRa{
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: auto;
+  padding-top: 0px;
+  display: none;
+}
+.contenidoModalRa{
+  width: 30%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  animation-name: animarmodal;
+  animation-duration: .7s;
+  background-color: #87c6ab;
+  padding:30px;
+  border-radius: 20px;
+}
+.XRa{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  position: relative;
+  left: 540px;
+  border-radius: 5px;
+} 
+/*Perímetro*/
+.modalRp{
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: auto;
+  padding-top: 0px;
+  display: none;
+}
+.contenidoModalRp{
+  width: 30%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  animation-name: animarmodal;
+  animation-duration: .7s;
+  background-color: #87c6ab;
+  padding:30px;
+  border-radius: 20px;
+}
+.XRp{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  position: relative;
+  left: 540px;
+  border-radius: 5px;
+} 
+/*Circulo*/
+/*Área*/
+.modalCia{
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: auto;
+  padding-top: 0px;
+  display: none;
+}
+.contenidoModalCia{
+  width: 30%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  animation-name: animarmodal;
+  animation-duration: .7s;
+  background-color: #87c6ab;
+  padding:30px;
+  border-radius: 20px;
+}
+.XCia{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  position: relative;
+  left: 540px;
+  border-radius: 5px;
+} 
+/*Perímetro*/
+.modalCip{
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow: auto;
+  padding-top: 0px;
+  display: none;
+}
+.contenidoModalCip{
+  width: 30%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  animation-name: animarmodal;
+  animation-duration: .7s;
+  background-color: #87c6ab;
+  padding:30px;
+  border-radius: 20px;
+}
+.XCip{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  position: relative;
+  left: 540px;
+  border-radius: 5px;
+} 
